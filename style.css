@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)),
+    url(images/clock-gears.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+}
+p {
+  color: rgb(208, 220, 221);
+  height: 100px;
+  width: 600px;
+  border-radius: 5px;
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #859398,
+    #283048
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  line-height: 100px;
+  text-align: center;
+  font-size: 60px;
+  transition: color 0.75s;
+  transition: 0.75s;
+}
+p:hover {
+  box-shadow: 1px 1px 5px #859398, 2px 2px 5px #859398, 3px 3px 5px #859398,
+    4px 4px 5px #9ec6d4;
+  background: rgb(163, 231, 240);
+  color: #000;
+  cursor: pointer;
+}
+h1 {
+  color: #2bc0e4;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgb(209, 99, 35), rgb(241, 175, 75));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+span {
+  font-weight: 900;
+}
+
+@media (max-width: 650px) {
+  div {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(4, 9, 30, 0.85),
+        rgba(4, 9, 30, 0.85)
+      ),
+      url(images/clock-gears.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  p {
+    height: 25px;
+    width: 320px;
+    font-size: 30px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
